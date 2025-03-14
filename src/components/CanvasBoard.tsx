@@ -90,7 +90,7 @@ const CanvasBoard = ({ height, width }: ICanvasBoard) => {
           disallowedDirection !== "LEFT" &&
           disallowedDirection !== "UP" &&
           disallowedDirection !== "DOWN" &&
-          event.key === "d"
+          (event.key === "d" || "ArrowRight")
         )
           moveSnake(20, 0, disallowedDirection); //Move RIGHT at start
       }
