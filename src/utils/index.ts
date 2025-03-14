@@ -25,8 +25,8 @@ export const drawObject = (
     }
 };
 function randomNumber(min: number, max: number){
-    const random = Math.random() * max;
-    return random - (random % 20);
+    const random = Math.random() * (max -min+min);
+    return random - (random % 20); 
 }
 export const generateRandomPosition = (width: number, height: number) => {
     return {
