@@ -34,7 +34,7 @@ export const generateRandomPosition = (width: number, height: number) => {
         y: randomNumber(0, height),
     };
 }
-export const hasSnakeCollied = (
+export const hasSnakeCollided = (
     snake: IObjectBody[],
     currentHeadPos: IObjectBody
 ) => {
